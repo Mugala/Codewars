@@ -19,8 +19,11 @@
 
 def maskify(cc):
     a = cc[-4:]
+    print(a)
     b = cc[0:-4]
     c = "#"
     print (len(b)*c + a)
 
 maskify("123456789")
+
+#  return "#"*(len(cc)-4) + cc[-4:]
