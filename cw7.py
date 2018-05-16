@@ -7,3 +7,15 @@
 # Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 # Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
 # Note that the Java version expects a return value of null for an empty string or null.
+
+def toJadenCase(string):
+    a ="".join(string).split()
+    c=[]
+    for i in a:
+        b = i.capitalize()
+        c.append(b)
+    e = ''
+    e =" ".join(c)
+    return e
+# return " ".join(w.capitalize() for w in string.split())
+toJadenCase("how can mirrors be real if our eyes aren't real")
