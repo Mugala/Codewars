@@ -3,7 +3,7 @@
 # Examples
 # "This is an example!" ==> "sihT si na !elpmaxe"
 # "double  spaces"      ==> "elbuod  secaps"
-
+# Done!
 def reverse_words(text):
     a =''.join(text).split(" ")
     c = []
@@ -15,5 +15,6 @@ def reverse_words(text):
     
     d = " ".join(c)
     return d 
+    #  return ' '.join(s[::-1] for s in str.split(' '))
     
 reverse_words("My name  is batman")
