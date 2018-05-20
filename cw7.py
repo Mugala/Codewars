@@ -9,13 +9,14 @@
 # Note that the Java version expects a return value of null for an empty string or null.
 #Done!
 def toJadenCase(string):
-    a ="".join(string).split()
+    a =string.split()  #you can jut use .split instead of both join and split
+    print(a)
     c=[]
     for i in a:
         b = i.capitalize()
         c.append(b)
     e = ''
     e =" ".join(c)
-    return e
+    print(e)
 # return " ".join(w.capitalize() for w in string.split())
 toJadenCase("how can mirrors be real if our eyes aren't real")
