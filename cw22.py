@@ -24,16 +24,56 @@
 # Enjoy Learning !!
 # Zizou
 
-def disarium_number(number):
-    a = '   '.join(str(number)).split()
-    b = 0
-    for i in a:
-        x=a.index(i)+1
-        b += int(i)**x
-    print(b)
-    if b == number:
-        return "Disarium !!"
-    else:
-        return "Not !!"    
+# def disarium_number(number):
+#     a = '   '.join(str(number)).split()
+#     b = 0
+#     for i in a:
+#         x=a.index(i)+1
+#         b += int(i)**x
+#     print(b)
+#     if b == number:
+#         return "Disarium !!"
+#     else:
+#         return "Not !!"    
 
-print(disarium_number(1024))
+# print(disarium_number(1024))
+
+
+# def total_string(string):
+#     a=3
+#     b=6
+#     c=8
+#     x=0
+#     full=' '.join(string).split()
+
+#     print(full)
+
+
+def total_string(string):
+    a=3
+    b=6
+    c=8
+    x=0
+    full=' '.join(string).split()
+
+    print(full)
+
+
+    for item in full:
+        if item == 'a':
+            x+=a
+            print(x)
+
+        if item =='b':
+
+            return b
+
+        if item == 'c':
+
+            return c
+
+        total= x + b + c
+
+
+
+total_string('this is absolutely crazy')
